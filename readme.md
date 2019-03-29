@@ -15,13 +15,19 @@
 	  PreferencesModule provides preferences
   	DB module for db etc.
 	
+	https://github.com/AndriiGepbl4/dagger_example/blob/master/app/src/main/java/zz/dagger/daggerexample/dagger/AppModule.java
+	
 3) 	add @Inject to classes constructors
 		see MyPrefs as example
+		
+	https://github.com/AndriiGepbl4/dagger_example/blob/master/app/src/main/java/zz/dagger/daggerexample/preferences/MyPrefs.java
 	
 4)	create component class
 
 	  add modules into @Component annotation
 	  inject  classes
+	  https://github.com/AndriiGepbl4/dagger_example/blob/master/app/src/main/java/zz/dagger/daggerexample/dagger/AppComponent.java
+	  
 	
 5)	MyApplication 
 	
@@ -39,9 +45,12 @@
                 .builder()
                 .appModule(new AppModule(getApplicationContext(), this))
                 .build();
+		
+	https://github.com/AndriiGepbl4/dagger_example/blob/master/app/src/main/java/zz/dagger/daggerexample/MyApplication.java
 
 6)  Manifest 
   	in application add android:name MyApplication
+	https://github.com/AndriiGepbl4/dagger_example/blob/master/app/src/main/AndroidManifest.xml
 				
 7)  Activities - @Inject necessary classes
 	
